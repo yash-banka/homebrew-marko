@@ -1,11 +1,11 @@
 cask "marko" do
-  version "1.3.0"
-  sha256 "821d09b75cf2403c4e2344560efa9aee09ea8252dbc8ffc11c2750d93ac7b24d"
+  version "1.3.1"
+  sha256 "b9ffd71ff7c1cd87461eb4a3ee921e7dd13dd7a7e3fa86f3a32cb2da9394ac88"
 
   url "https://github.com/yash-banka/marko-releases/releases/download/v#{version}/Marko.dmg"
   name "Marko"
   desc "Markdown viewer that renders GFM, Mermaid, and KaTeX offline"
-  homepage "https://github.com/yash-banka/marko-releases"
+  homepage "https://yashbanka.com/marko"
 
   # Read the same Sparkle feed the app itself updates from, so the cask can
   # never claim a version the appcast doesn't serve. `&:short_version` is
