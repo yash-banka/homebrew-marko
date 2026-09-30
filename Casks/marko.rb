@@ -7,6 +7,11 @@ cask "marko" do
   desc "Markdown viewer that renders GFM, Mermaid, and KaTeX offline"
   homepage "https://yashbanka.com/marko"
 
+  # 1.4.2 is the last direct build. Marko 2.0 and everything after it ships only
+  # through the Mac App Store, so the cask stays installable but tells people
+  # where Marko went. Set the date to the day 1.4.2 is released.
+  deprecate! date: "2026-10-06", because: "is now distributed through the Mac App Store"
+
   # Read the same Sparkle feed the app itself updates from, so the cask can
   # never claim a version the appcast doesn't serve. `&:short_version` is
   # load-bearing: the default strategy returns Sparkle's `nice_version`, which
@@ -28,6 +33,13 @@ cask "marko" do
   depends_on macos: :sonoma
 
   app "Marko.app"
+
+  caveats <<~EOS
+    Marko 2.0 is on the Mac App Store, free, and this copy won't be updated again:
+      https://apps.apple.com/app/id6797180877
+    With mas installed: mas install 6797180877
+    Once the App Store copy is installed: brew uninstall --cask marko
+  EOS
 
   # Only the com.yashbanka.marko domain. A dev machine also accumulates
   # ~/Library/Preferences/Marko.plist, ~/Library/Caches/Marko and a set of

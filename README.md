@@ -1,7 +1,16 @@
-# Marko — Homebrew tap
+# Marko: Homebrew tap
 
 A Homebrew tap for [Marko](https://github.com/yash-banka/marko-releases), a fast,
 native Markdown viewer for macOS.
+
+> **Marko has moved to the Mac App Store.** Marko 2.0 and every update after it
+> ship only through the [Mac App Store](https://apps.apple.com/app/id6797180877),
+> free. This cask installs 1.4.2, the last direct build, and is deprecated.
+> Install from the App Store instead, or with [mas](https://github.com/mas-cli/mas):
+>
+> ```sh
+> mas install 6797180877
+> ```
 
 ## Install
 
@@ -22,10 +31,8 @@ opens without any Gatekeeper prompt after installing.
 
 ## Updates
 
-Marko updates itself through Sparkle, so the cask declares `auto_updates true`
-and `brew upgrade` deliberately leaves it alone. Use **Marko → Check for
-Updates**, or let it check on its own. `brew upgrade --cask --greedy marko`
-would also work, but it is never necessary.
+1.4.2 is the last update this cask will get. Marko continues on the Mac App
+Store, which updates it from then on.
 
 ## Uninstall
 
