@@ -1,6 +1,6 @@
 cask "marko" do
-  version "1.4.0"
-  sha256 "790cf720f0e53fd71a4974dc0662e18c20274154fd7d2ef12823f4a5a6932ddf"
+  version "1.4.2"
+  sha256 "fc9c96c3f286c6fbc8eb0a06cf786afda1f71fa08890cb9ea31fa69c5df9a6d2"
 
   url "https://github.com/yash-banka/marko-releases/releases/download/v#{version}/Marko.dmg"
   name "Marko"
